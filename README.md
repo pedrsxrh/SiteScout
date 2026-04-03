@@ -8,7 +8,7 @@
 [](https://www.deepseek.com/)
 
 -----
-
+![alt text](image.png)
 ## 🌟 Overview
 
 **SiteScout** is a specialized AI Agent designed for "Digital Archeology." It solves the pain points of searching for niche resources in specific forums or vertical sites where information density is low, ads are rampant, and links are often dead or hidden.
