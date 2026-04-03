@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-05998b.svg)
+![LLM](https://img.shields.io/badge/LLM-DeepSeek--R1-red.svg)
 
 # 🕵️‍♂️ SiteScout (灵嗅)
 
